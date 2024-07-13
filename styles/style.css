@@ -1,15 +1,22 @@
-/* font style */
+/* Font style imported */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Universal rule */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* Font style added in body */
 body {
   font-family: "Lato", sans-serif;
 }
+
+/* Banner section styles start here */
 .banner-section-container {
-  max-width: 1352px;
-  height: 642px;
+  width: 100%;
+  height: 656px;
   background: rgba(229, 84, 115, 0.1);
 }
 .banner-content {
@@ -59,8 +66,9 @@ body {
   padding: 14px 30px 14px 30px;
   border: none;
 }
+/* Banner section styles end here */
 
-/* featured section styles here  */
+/* Featured section styles start here */
 .featured-container {
   width: 980px;
   height: 540px;
@@ -157,10 +165,11 @@ text-decoration-line: underline;
   text-decoration-line: underline;
   margin-top: 22px;
 }
+/* Featured section styles end here */
 
-/* facility section style here */
+/* Facility section styles start here */
 .facility-container {
-  width: 980px;
+  width: 1150px;
   height: 218px;
   margin: 0 auto;
   margin-top: 88px;
@@ -197,7 +206,7 @@ height: 60px;
 
 /* off section style here */
 .off-container {
-  width: 1339px;
+  width: 100%;
   height: 422px;
   margin: 0 auto;
   display: flex;
@@ -250,4 +259,92 @@ height: 60px;
   height: 286px;
   margin-left: 86px;
   margin-bottom: 36px;
+}
+
+.instagram-container {
+  width: 1152px;
+  height: 468px;
+  border: 2px solid red;
+  margin: 0 auto;
+  margin-top: 102px;
+
+}
+.instagram-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.instagram-text-content h2 {
+  color: rgb(39, 39, 39);
+font-family: Lato;
+font-size: 32px;
+font-weight: 800;
+line-height: 48px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 16px;
+}
+.instagram-text-content p {
+  color: rgba(39, 39, 39, 0.6);
+font-family: Lato;
+font-size: 15px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: ;
+}
+.instagram-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+  gap: 18px;
+}
+.instagram-images img {
+  width: 274px;
+  height: 316px;
+}
+
+.footer-container {
+  width: 100%;
+  height: 360px;
+  margin-top: 102px; 
+  background: rgb(17, 16, 16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container h2 {
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.footer-title {
+  color: rgb(229, 84, 115);
+}
+.footer-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 26px;
+}
+#footer-text {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
 }
